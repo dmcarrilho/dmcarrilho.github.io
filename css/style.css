@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #fef9f6;
+    background: #040f41;
+    background: linear-gradient(180deg, #040f41 0%, #00e5fc 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 100px;
+    border: 3px solid #fef9f6;
+    box-shadow: 5px 5px 10px #040f41;
+    padding: 3px;
+    margin: 5px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 5px 20px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 22px;
+    margin: 5px 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px;
+}
+
+.social img {
+    width: 50px;
+    border-radius: 50px;
+    border: 3px solid #fef9f6;
+    box-shadow: 5px 5px 10px #040f41;
+    padding: 3px;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    margin: 20px;
+}
+
+.links li a {
+    display: block;
+    background-color: #fef9f6;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #040f41;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.links li a span {
+    color: #00e5fc;
+    display: block;
+    font-weight: normal;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.links li a.active {
+    box-shadow: 5px 5px 10px #040f41;
+}
+
+.links.second {
+    margin-top: 30px;
+}
