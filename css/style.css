@@ -14,8 +14,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.header {
+    text-align: center;
+}
+
+.profile {   
+    margin: 20px 0 0 0;
+}
+
 .avatar {
-    width: 150px;
+    width: 80px;
     border-radius: 100px;
     border: 3px solid #fef9f6;
     box-shadow: 5px 5px 10px #040f41;
@@ -35,19 +43,18 @@ h2 {
     margin: 5px 20px;
 }
 
-.profile {
-    text-align: center;
-    margin-top: 20px;
+.container {
+    text-align: left;
 }
 
-.social {
+.container nav ul.icons {
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin: 20px;
 }
 
-.social img {
+.container nav ul.icons img {
     width: 50px;
     border-radius: 50px;
     border: 3px solid #fef9f6;
@@ -55,37 +62,41 @@ h2 {
     padding: 3px;
 }
 
-.links {
+.container article ul.links {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-}
-
-.links li {
     margin: 20px;
 }
 
-.links li a {
-    display: block;
-    background-color: #fef9f6;
-    padding: 15px 20px;
+.container article ul.links li {
+    width: 120px;
     border-radius: 5px;
+    background-color: #fef9f6;
+    box-shadow: 5px 5px 10px #040f41;
+    padding: 15px 20px;
+}
+
+.container article ul.links li a {
     text-decoration: none;
     color: #040f41;
     font-weight: bold;
     font-size: 16px;
 }
 
-.links li a span {
-    color: #00e5fc;
+.container article ul.links li span {
     display: block;
-    font-weight: normal;
+    color: #00e5fc;
     margin-top: 5px;
     font-size: 14px;
 }
 
-.links li a.active {
-    box-shadow: 5px 5px 10px #040f41;
+.container article ul.links img {
+    width: 120px;
+    margin: 15px 0 0 0;
 }
 
-.links.second {
-    margin-top: 30px;
+.footer {
+    text-align: center;
+    padding: 20px 0;
 }
