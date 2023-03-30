@@ -1,0 +1,12 @@
+:root {
+    --header-display: flex;
+    --header-width: 90vw;
+    
+    --profile-border: 1vw solid var(--color-primary);
+    --profile-border-padding: 1vw;
+    --profile-border-radius: 20vw;
+    --profile-box-shadow: 1vw 1vw 3vw var(--color-tertiary);
+    --profile-display: block;
+    --profile-margin: 2vh 0;
+    --profile-width: 30vw;
+}

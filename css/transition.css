@@ -1,0 +1,7 @@
+.container article h3 {
+    transition-duration: 5000ms;
+}
+.container article h3:hover {
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+}
