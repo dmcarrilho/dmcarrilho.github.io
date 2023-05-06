@@ -24,56 +24,61 @@ body {
 }
 
 .home .header {   
-    padding: 2vh 0;
+    padding: 2vh;
 }
 
 .home .header .profile {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
 }
 
 .home .header .profile ul {
     display: flex;
-    list-style: none;
+    flex-direction: row;
 }
 
 .home .header .profile ul li {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
-.home .header .profile ul li img {
-    width: 12vh;
-    border: 0.5vh solid var(--color-primary);
+.home .header .profile ul li h1 {
+    font-size: 3vh;
+    letter-spacing: 0.8vh;
+}
+
+.home .header .profile ul li h2 {
+    font-size: 2vh;
+    letter-spacing: 0.2vh;
+}
+
+.home .header .profile ul li h1,h2 {
+    color: var(--color-secondary);
+    font-family: 'Gloock', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home .header .profile ul li span {
+    font-size: 1.8vh;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.8vh;
+}
+
+.home .header .profile ul li .logo {
+    width: 10vh;
+    border: 0.3vh solid var(--color-primary);
     box-shadow: 0.5vh 0.5vh 1vh var(--color-tertiary);
     border-radius: 15vh;
     padding: 0.2vh;
 }
 
-.home .header .profile ul li img:hover {
-    scale: 1.2;
-}
-
-.home .banner {
-    text-align: center;
-}
-
-.home .banner span {
-    display: block;
-}
-
-.home .banner .title {
-    color: var(--color-secondary);
-    font-family: 'Gloock', serif;
-    font-size: 2vh;
-    font-weight: 400;
+.home .header .profile ul li a {
     text-transform: uppercase;
-    letter-spacing: 0.2vh;
-}
-
-.home .banner .description {
-    font-size: 1.6vh;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2vh;
+    text-decoration: none;
 }
