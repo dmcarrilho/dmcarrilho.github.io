@@ -2,6 +2,7 @@
     --color-primary: #fff7e7;
     --color-secondary: #efc880;
     --color-tertiary: #991830;
+    --color-transparence: #000000;
 }
 
 * {
@@ -142,25 +143,43 @@ body {
 
 .home .about {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
     background-image: url("../imagens/loja.png");
     background-color: var(--color-primary);
-    height: 500px;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vw;
 }
 
 .home .about ul {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
+    height: inherit;
+    padding: 16vw;
+    background-color: var(--color-transparence);
+    background-size: cover;
+    opacity: 0.6;
 }
 
 .home .about ul li {
     display: flex;
-    flex-direction: column;
+}
+
+.home .about ul li h1 {
+    font-size: 2.2vh;
+    color: var(--color-primary);
+    font-family: 'Gloock', serif;
+    font-weight: 700;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.home .about ul li span {
+    font-size: 2vh;
+    font-weight: 300;
+    margin-top: 2vh;
+    text-align: justify;
 }
