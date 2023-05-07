@@ -19,59 +19,30 @@ body {
     position: relative;
     background-size: cover;
     background: linear-gradient(180deg, var(--color-tertiary) 0%, var(--color-secondary) 100%);
-    height: 100vh;
+    height: 14vh;
     background-attachment: fixed;
 }
 
 .home .header {   
-    padding: 2vw;
-}
-
-.home .header .profile {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh 2vw;
 }
 
-.home .header .profile ul {
+.home .header ul {
     display: flex;
-    flex-direction: row;
-    padding: 0 2vw 0 0;
     list-style: none;
 }
 
-.home .header .profile ul li {
+.home .header ul li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
 }
 
-.home .header .profile ul li h1 {
-    font-size: 3vh;
-    letter-spacing: 0.8vh;
-}
-
-.home .header .profile ul li h2 {
-    font-size: 2vh;
-    letter-spacing: 0.2vh;
-}
-
-.home .header .profile ul li h1,h2 {
-    color: var(--color-secondary);
-    font-family: 'Gloock', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.home .header .profile ul li span {
-    font-size: 1.8vh;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.8vh;
-}
-
-.home .header .profile ul li .logo {
+.home .header ul li .logo {
     width: 10vh;
     border: 0.3vh solid var(--color-primary);
     box-shadow: 0.5vh 0.5vh 1vh var(--color-tertiary);
@@ -79,7 +50,31 @@ body {
     padding: 0.2vh;
 }
 
-.home .header .profile ul li a {
+.home .header ul li h1 {
+    font-size: 3vh;
+    letter-spacing: 0.8vh;
+}
+
+.home .header ul li h2 {
+    font-size: 2vh;
+    letter-spacing: 0.2vh;
+}
+
+.home .header ul li h1,h2 {
+    color: var(--color-secondary);
+    font-family: 'Gloock', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home .header ul li span {
+    font-size: 1.8vh;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.8vh;
+}
+
+.home .header ul li a {
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -91,42 +86,81 @@ body {
 }
 
 .home .news {
-    padding: 2vw 0;
-}
-
-.home .news .post {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3vh 0;
 }
 
-.home .news .post ul {
+.home .news ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
 }
 
-.home .news .post ul li {
+.home .news ul li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
 }
 
-.home .news .post ul li h1 {
+.home .news ul li h1 {
     font-size: 3vh;
     letter-spacing: 0.8vh;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     font-family: 'Gloock', serif;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.home .news .post ul li img {
+.home .post {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home .post ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .post ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3vh 0;
+}
+
+.home .post ul li img {
     width: 80vw;
     resize: both;
     overflow: auto;
     border-radius: 2vh;
     box-shadow: 0.5vh 0.5vh 1vh var(--color-tertiary);
-    margin: 2vh 0 0 0;
+}
+
+.home .about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-image: url("../imagens/loja.png");
+    background-color: var(--color-primary);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .about ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .about ul li {
+    display: flex;
+    flex-direction: column;
 }
