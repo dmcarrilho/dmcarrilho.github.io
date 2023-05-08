@@ -13,14 +13,15 @@
 
 body {
     color: var(--color-primary);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
 }
 
 .home {
     position: relative;
     background-size: cover;
     background: linear-gradient(180deg, var(--color-tertiary) 0%, var(--color-secondary) 100%);
-    height: 14vh;
+    height: 16vh;
     background-attachment: fixed;
 }
 
@@ -29,7 +30,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 2vh 2vw;
 }
 
@@ -40,6 +41,7 @@ body {
 
 .home .header ul li {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -51,28 +53,17 @@ body {
     padding: 0.2vh;
 }
 
-.home .header ul li h1 {
-    font-size: 3vh;
-    letter-spacing: 0.8vh;
-}
-
-.home .header ul li h2 {
-    font-size: 2vh;
-    letter-spacing: 0.2vh;
-}
-
 .home .header ul li h1,h2 {
+    font-size: 3vh;
     color: var(--color-secondary);
-    font-family: 'Gloock', serif;
-    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
 .home .header ul li span {
-    font-size: 1.8vh;
-    font-weight: 300;
+    font-size: 2vh;
     text-transform: uppercase;
-    letter-spacing: 0.8vh;
 }
 
 .home .header ul li a {
@@ -109,8 +100,8 @@ body {
     font-size: 3vh;
     letter-spacing: 0.8vh;
     color: var(--color-tertiary);
-    font-family: 'Gloock', serif;
-    font-weight: 700;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
@@ -148,7 +139,7 @@ body {
     background-image: url("../imagens/loja.png");
     background-color: var(--color-primary);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
     height: 100vw;
 }
 
@@ -171,15 +162,26 @@ body {
 .home .about ul li h1 {
     font-size: 2.2vh;
     color: var(--color-primary);
-    font-family: 'Gloock', serif;
-    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
     text-align: justify;
     text-transform: uppercase;
 }
 
 .home .about ul li span {
     font-size: 2vh;
-    font-weight: 300;
     margin-top: 2vh;
     text-align: justify;
 }
+
+.home .event {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("../imagens/080523.png");
+    background-color: var(--color-primary);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 125vw;
+}
+
